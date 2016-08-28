@@ -1,0 +1,15 @@
+CREATE TABLE IF NOT EXISTS `tbluseraccounts` (
+  `userID` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(255) DEFAULT NULL,
+  `users_name` varchar(255) DEFAULT NULL,
+  `userpassword` varchar(255) DEFAULT NULL,
+  `usertype` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`userID`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+ 
+--
+-- Dumping data for table `tbluseraccounts`
+--
+ 
+INSERT INTO `tbluseraccounts` (`userID`, `username`, `users_name`, `userpassword`, `usertype`) VALUES
+(1, 'admin', 'test, 'admin123', 'Admin'),
